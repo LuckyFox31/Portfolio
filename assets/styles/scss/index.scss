@@ -1,0 +1,73 @@
+main{
+    #main-grid{
+        #main-infos{
+            grid-column-start: 7;
+            grid-column-end: span 6;
+
+            #logo-phone{
+                display: none;
+
+                @media screen and (max-width: 1140px){
+                    display: block;
+                    width: 30vw;
+                    padding-top: 20vh;
+                    padding-bottom: 10vh;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            h1{
+                font-weight: 700;
+                font-size: 4em;
+
+                @media screen and (max-width: 1140px){
+                    font-size: 3em;
+                    text-align: center;
+                }
+            }
+
+            h2{
+                font-weight: 600;
+                font-size: 3em;
+
+                @media screen and (max-width: 1140px){
+                    font-size: 1.9em;
+                    text-align: center;
+                }
+            }
+
+            #main-technos{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;  
+
+                @media screen and (max-width: 1140px){
+                    display: none;
+                }
+
+                img{
+                    margin-right: 20px;
+                    height: 50px;
+                }
+            }
+        }
+
+        #main-buttons{
+            margin-top: 50px;
+
+            @media screen and (max-width: 1140px){
+                display: block;
+                text-align: center;
+                margin-top: 35px;
+            }
+            a{
+                font-size: 1.3em;
+                color: black;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@import "config";
